@@ -20,6 +20,9 @@ Then imported two JSON files (accounts, transactions) in order to iterate throug
       - Accounts
         - Button -> transaction_screen.dart
 
+# Transaction screen
+- List of transactions
+- back button to go back to the welcome page
 
 # Classes
 - MyHomePage 
