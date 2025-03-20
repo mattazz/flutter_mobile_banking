@@ -40,7 +40,15 @@ class _TransactionsScreenState extends State<TransactionsScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('${widget.accountType} Transactions')),
+      appBar: AppBar(
+        title: Text('${widget.accountType} Transactions'),
+        leading: IconButton(
+          icon: Icon(Icons.arrow_back),
+          onPressed: () {
+            Navigator.pop(context);
+          },
+        ),
+      ),
       body:
           transactions == null
               ? Center(child: CircularProgressIndicator())
